@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HootEngine.iml" filepath="$PROJECT_DIR$/HootEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JGameLib.iml" filepath="$PROJECT_DIR$/JGameLib.iml" />
     </modules>
   </component>
 </project>

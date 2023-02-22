@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="608896cf-4494-46d2-a1bb-d508a6d40ed8" name="Changes" comment="" />
+    <list default="true" id="608896cf-4494-46d2-a1bb-d508a6d40ed8" name="Changes" comment="Bug fix!">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HootEngine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JGameLib.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +31,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/patrickcarroll/IdeaProjects/JGameLib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -35,7 +47,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677081963102</updated>
+      <workItem from="1677081964414" duration="367000" />
+      <workItem from="1677082693234" duration="1000" />
+      <workItem from="1677082723674" duration="4000" />
     </task>
+    <task id="LOCAL-00001" summary="Bug fix!">
+      <created>1677082058479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677082058479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bug fix!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix!" />
   </component>
 </project>
