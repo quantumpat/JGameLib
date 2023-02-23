@@ -14,10 +14,12 @@ public class Game {
 
     /**
      * Manages all components of the game.
+     *
+     * @param name The name of the game
      */
-    public Game() {
+    public Game(String name) {
 
-        config = new GameConfig();
+        config = new GameConfig(name);
 
     }
 
@@ -51,7 +53,7 @@ public class Game {
      */
 
     /**
-     * @return Returns the config object.
+     * @return The config object.
      */
     public GameConfig getConfig() {
         return config;
