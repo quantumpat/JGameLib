@@ -1,9 +1,11 @@
 import core.Game;
+import core.GameConfig;
 
 public class Main {
     public static void main(String[] args) {
 
-        Game demoGame = new Game("Demo Game");
+        GameConfig config = new GameConfig("Demo Game", "Patrick Carroll", "Adventure", "1.0.0");
+        Game demoGame = new Game(config);
 
     }
 }

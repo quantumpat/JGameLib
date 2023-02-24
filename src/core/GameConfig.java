@@ -15,10 +15,57 @@ public class GameConfig {
 
     /**
      * Used to configure and store information regarding the game.
+     *
+     * @param name - The name of the game.
      */
     public GameConfig(String name) {
 
         this.name = name;
+
+    }
+
+    /**
+     * Used to configure and store information regarding the game.
+     *
+     * @param name The name of the game.
+     * @param author The author of the game.
+     */
+    public GameConfig(String name, String author) {
+
+        this.name = name;
+        this.author = author;
+
+    }
+
+    /**
+     * Used to configure and store information regarding the game.
+     *
+     * @param name The name of the game.
+     * @param author The author of the game.
+     * @param genre The genre of the game.
+     */
+    public GameConfig(String name, String author, String genre) {
+
+        this.name = name;
+        this.author = author;
+        this.genre = genre;
+
+    }
+
+    /**
+     * Used to configure and store information regarding the game.
+     *
+     * @param name The name of the game.
+     * @param author The author of the game.
+     * @param genre The genre of the game.
+     * @param version The version of the game.
+     */
+    public GameConfig(String name, String author, String genre, String version) {
+
+        this.name = name;
+        this.author = author;
+        this.genre = genre;
+        this.version = version;
 
     }
 
