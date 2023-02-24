@@ -1,5 +1,7 @@
 package core;
 
+import gfx.Window;
+
 public class Game {
 
     /*
@@ -8,6 +10,7 @@ public class Game {
 
     private String name = "";
     private GameConfig config;
+    private Window window;
 
 
     /*
@@ -26,23 +29,19 @@ public class Game {
 
     }
 
-    /**
-     * Manages all components of the game.
-     *
-     * @param config Configures the game.
-     */
-    public Game(GameConfig config) {
-
-        this.config = config;
-
-    }
-
 
     /*
      * Method(s)
      */
 
+    /**
+     * Called when the config game config is changed.
+     */
     protected void configUpdated() {
+
+        if (window != null) {
+            window.configUpdated();
+        }
 
     }
 
@@ -50,7 +49,11 @@ public class Game {
      * Starts up the game.
      */
     public synchronized void start() {
+
         printInfo();
+
+        window = new Window(this);
+
     }
 
     /**
@@ -114,6 +117,14 @@ public class Game {
      */
     public GameConfig getConfig() {
         return config;
+    }
+
+    /**
+     * Returns the game's window.
+     * @return The game's window.
+     */
+    public Window getWindow() {
+        return window;
     }
 
 }

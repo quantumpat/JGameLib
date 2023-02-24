@@ -59,7 +59,7 @@ public class Window {
     /**
      * Called when the game config is changed.
      */
-    protected void configUpdated() {
+    public void configUpdated() {
 
         frame.setTitle(game.getConfig().getName());
 
