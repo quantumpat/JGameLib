@@ -40,11 +40,52 @@ public class Game {
      */
 
     /**
+     * Starts up the game.
+     */
+    public void start() {
+        printInfo();
+    }
+
+    /**
+     * Pauses the game.
+     */
+    public void pause() {
+
+    }
+
+    /**
+     * Terminates the game.
+     */
+    public void stop() {
+
+    }
+
+    /**
      * Prints game info.
      */
-
     private void printInfo() {
-        System.out.println("Game created!");
+
+        int len = config.getName().length();
+        System.out.print(config.getName());
+
+        if (config.getVersion() != null) {
+            System.out.println(" [" + config.getVersion() + "]");
+            len += config.getVersion().length() + 3;
+        }
+
+        for (int i = 0; i < len; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+
+        if (config.getAuthor() != null) {
+            System.out.println("By " + config.getAuthor());
+        }
+
+        if (config.getGenre() != null) {
+            System.out.println("Genre: " + config.getGenre());
+        }
+
     }
 
 

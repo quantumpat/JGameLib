@@ -6,6 +6,7 @@ public class Main {
 
         GameConfig config = new GameConfig("Demo Game", "Patrick Carroll", "Adventure", "1.0.0");
         Game demoGame = new Game(config);
+        demoGame.start();
 
     }
 }
