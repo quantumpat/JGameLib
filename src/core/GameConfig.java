@@ -33,7 +33,7 @@ public class GameConfig {
 
 
     /*
-     * Getters & Setters
+     * Getter(s) & Setter(s)
      */
 
     /**

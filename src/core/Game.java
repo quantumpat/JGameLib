@@ -1,6 +1,7 @@
 package core;
 
 import gfx.Window;
+import scene.SceneManager;
 import time.GameLoop;
 
 import java.awt.event.WindowEvent;
@@ -15,6 +16,7 @@ public class Game {
     private GameConfig config;
     private Window window;
     private GameLoop gameLoop;
+    private SceneManager sceneManager;
 
 
     /*

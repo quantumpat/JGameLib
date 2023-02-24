@@ -93,7 +93,7 @@ public class Window {
 
 
     /*
-     * Getters & Setters
+     * Getter(s) & Setter(s)
      */
 
     /**
