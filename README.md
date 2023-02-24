@@ -2,7 +2,7 @@
 
 A Java-based 2D game engine.
 
-<details><summary><h1>Getting Started</h1></summary>
+<details><summary><h3>Getting Started</h3></summary>
 
 #### Creating a game
 Learn how to get started and make a game for yourself.
