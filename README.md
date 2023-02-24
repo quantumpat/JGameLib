@@ -2,8 +2,7 @@
 
 A Java-based 2D game engine.
 
-<details>
-### Getting Started
+<Getting Started>
 
 #### Creating a game
 Learn how to get started and make a game for yourself.
@@ -29,4 +28,4 @@ demoGame.getConfig().setDebugging(true);
 demoGame.getConfig().setDebuggingFPS(true);
 ```
 
-</details>
+</Getting Started>
