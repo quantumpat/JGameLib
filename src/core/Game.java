@@ -42,21 +42,21 @@ public class Game {
     /**
      * Starts up the game.
      */
-    public void start() {
+    public synchronized void start() {
         printInfo();
     }
 
     /**
      * Pauses the game.
      */
-    public void pause() {
+    public synchronized void pause() {
 
     }
 
     /**
      * Terminates the game.
      */
-    public void stop() {
+    public synchronized void stop() {
 
     }
 
