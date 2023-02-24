@@ -147,6 +147,9 @@ public class Game {
             System.out.println("Genre: " + config.getGenre());
         }
 
+        if (config.getAuthor() != null || config.getGenre() != null)
+            System.out.println();
+
     }
 
 

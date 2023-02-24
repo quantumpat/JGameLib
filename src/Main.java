@@ -9,6 +9,7 @@ public class Main {
         demoGame.getConfig().setGenre("Adventure");
         demoGame.getConfig().setVersion("1.0.0");
         demoGame.getConfig().setSize(1280, 720);
+        demoGame.getConfig().setDebuggingFPS(true);
 
         demoGame.start();
 
