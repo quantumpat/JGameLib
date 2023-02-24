@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="608896cf-4494-46d2-a1bb-d508a6d40ed8" name="Changes" comment="Updated game config objects!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="608896cf-4494-46d2-a1bb-d508a6d40ed8" name="Changes" comment="Updated readme.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
       <workItem from="1677081964414" duration="367000" />
       <workItem from="1677082693234" duration="1000" />
       <workItem from="1677082723674" duration="4000" />
-      <workItem from="1677082733803" duration="2912000" />
+      <workItem from="1677082733803" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix!">
       <created>1677082058479</created>
@@ -90,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677112876684</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated readme.md">
+      <created>1677197319794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677197319794</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +107,7 @@
     <MESSAGE value="Name change!" />
     <MESSAGE value="Created the &quot;Game&quot; and the &quot;GameConfig&quot; class." />
     <MESSAGE value="Updated game config objects!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated game config objects!" />
+    <MESSAGE value="Updated readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated readme.md" />
   </component>
 </project>
