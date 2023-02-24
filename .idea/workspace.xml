@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="608896cf-4494-46d2-a1bb-d508a6d40ed8" name="Changes" comment="Added background color config field.">
+    <list default="true" id="608896cf-4494-46d2-a1bb-d508a6d40ed8" name="Changes" comment="Made it easier to resize in the config using &quot;setSize()&quot;">
+      <change afterPath="$PROJECT_DIR$/src/time/GameLoop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/GameConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/GameConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <workItem from="1677081964414" duration="367000" />
       <workItem from="1677082693234" duration="1000" />
       <workItem from="1677082723674" duration="4000" />
-      <workItem from="1677082733803" duration="7174000" />
+      <workItem from="1677082733803" duration="8665000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix!">
       <created>1677082058479</created>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677201396240</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Made it easier to resize in the config using &quot;setSize()&quot;">
+      <created>1677201864466</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677201864466</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +198,7 @@
     <MESSAGE value="&quot;Window&quot; class now creates a visible window!" />
     <MESSAGE value="Updated Readme.md!" />
     <MESSAGE value="Added background color config field." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added background color config field." />
+    <MESSAGE value="Made it easier to resize in the config using &quot;setSize()&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it easier to resize in the config using &quot;setSize()&quot;" />
   </component>
 </project>

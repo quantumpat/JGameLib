@@ -12,6 +12,7 @@ public class GameConfig {
     private String name, genre, author, version;
     private int width = 800, height = 600;
     private Color backgroundColor = Color.BLACK;
+    private boolean debugging = false, debuggingFPS = false;
 
 
     /*
@@ -179,6 +180,43 @@ public class GameConfig {
      */
     public void setBackgroundColor(Color backgroundColor) {
         this.backgroundColor = backgroundColor;
+        game.configUpdated();
+    }
+
+    /**
+     * Returns whether the debug method will be called.
+     * @return Whether the debug method will be called.
+     */
+    public boolean isDebugging() {
+        return debugging;
+    }
+
+    /**
+     * Sets whether the debug method will be called.
+     * @param debugging Whether the debug method will be called.
+     */
+    public void setDebugging(boolean debugging) {
+        this.debugging = debugging;
+        game.configUpdated();
+    }
+
+    /**
+     * Returns whether the fps will be logged.
+     * @return Whether the fps will be logged.
+     */
+    public boolean isDebuggingFPS() {
+        return debuggingFPS;
+    }
+
+    /**
+     * Sets whether the fps will be logged or not (if true, the "debugging" field will also be set true).
+     * @param debuggingFPS Whether the fps will be logged.
+     */
+    public void setDebuggingFPS(boolean debuggingFPS) {
+        this.debuggingFPS = debuggingFPS;
+        if (debuggingFPS)
+            this.debugging = true;
+
         game.configUpdated();
     }
 

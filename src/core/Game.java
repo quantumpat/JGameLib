@@ -47,6 +47,18 @@ public class Game {
 
     }
 
+    public void update() {
+
+    }
+
+    public void render() {
+
+    }
+
+    public void debug() {
+
+    }
+
     /**
      * Starts up the game.
      */
