@@ -1,5 +1,7 @@
 package core;
 
+import java.awt.*;
+
 public class GameConfig {
 
     /*
@@ -9,6 +11,7 @@ public class GameConfig {
     private Game game;
     private String name, genre, author, version;
     private int width = 800, height = 600;
+    private Color backgroundColor = Color.BLACK;
 
 
     /*
@@ -131,6 +134,23 @@ public class GameConfig {
      */
     public void setHeight(int height) {
         this.height = height;
+        game.configUpdated();
+    }
+
+    /**
+     * Returns the background color of the canvas.
+     * @return The background color of the canvas.
+     */
+    public Color getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    /**
+     * Sets the canvas background color
+     * @param backgroundColor The color the background of the canvas will be set to.
+     */
+    public void setBackgroundColor(Color backgroundColor) {
+        this.backgroundColor = backgroundColor;
         game.configUpdated();
     }
 

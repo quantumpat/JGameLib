@@ -35,14 +35,15 @@ public class Window {
         frame = new JFrame(game.getConfig().getName());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.setLocationRelativeTo(null);
         frame.setSize(new Dimension(width, height));
         frame.setFocusable(true);
+        frame.setLocationRelativeTo(null);
 
         canvas = new Canvas();
         canvas.setPreferredSize(new Dimension(width, height));
         canvas.setMinimumSize(new Dimension(width, height));
         canvas.setMaximumSize(new Dimension(width, height));
+        canvas.setBackground(game.getConfig().getBackgroundColor());
 
         frame.add(canvas);
         frame.pack();
@@ -61,8 +62,10 @@ public class Window {
      */
     public void configUpdated() {
 
+        //Title
         frame.setTitle(game.getConfig().getName());
 
+        //Sizing
         width = game.getConfig().getWidth();
         height = game.getConfig().getHeight();
         frame.setSize(new Dimension(width, height));
@@ -72,6 +75,9 @@ public class Window {
         canvas.setMaximumSize(new Dimension(width, height));
 
         frame.pack();
+
+        //Background color
+        canvas.setBackground(game.getConfig().getBackgroundColor());
 
     }
 
