@@ -34,6 +34,24 @@ public class SceneManager {
 
 
     /*
+     * Method(s)
+     */
+
+    /**
+     * Adds a scene.
+     * @param scene The scene to be added.
+     */
+    public void add(Scene scene) {
+
+        if (scene == null)
+            return;
+
+        scenes.add(scene);
+
+    }
+
+
+    /*
      * Getter(s) & Setter(s)
      */
 
