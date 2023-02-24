@@ -20,7 +20,6 @@ public class GameConfig {
 
     /**
      * Used to configure and store information regarding the game.
-     *
      * @param game The game object.
      */
     public GameConfig(Game game) {
@@ -35,6 +34,14 @@ public class GameConfig {
     /*
      * Getters & Setters
      */
+
+    /**
+     * Returns the game object.
+     * @return The game object.
+     */
+    public Game getGame() {
+        return game;
+    }
 
     /**
      * Returns the name of the game.
@@ -113,7 +120,7 @@ public class GameConfig {
 
     /**
      * Sets the width of the game window.
-     * @param width The width of the game window to be set (in pixels).
+     * @param width The width of the game window to be set to (in pixels).
      */
     public void setWidth(int width) {
         this.width = width;
@@ -130,10 +137,31 @@ public class GameConfig {
 
     /**
      * Sets the height of the game window (in pixels).
-     * @param height The height of the game window to be set (in pixels).
+     * @param height The height of the game window to be set to (in pixels).
      */
     public void setHeight(int height) {
         this.height = height;
+        game.configUpdated();
+    }
+
+    /**
+     * Sets the size (width and height) of the game window (in pixels).
+     * @param width The width of the game window to be set to (in pixels).
+     * @param height The height of the game window to be set to (in pixels).
+     */
+    public void setSize(int width, int height) {
+        this.width = width;
+        this.height = height;
+        game.configUpdated();
+    }
+
+    /**
+     * Sets the size (width and height) of the game window (in pixels).
+     * @param dimension The dimension the window will be set to (in pixels).
+     */
+    public void setSize(Dimension dimension) {
+        width = dimension.width;
+        height = dimension.height;
         game.configUpdated();
     }
 

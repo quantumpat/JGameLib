@@ -4,6 +4,7 @@ import core.Game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowEvent;
 
 public class Window {
 
@@ -56,6 +57,15 @@ public class Window {
     /*
      * Methods
      */
+
+    /**
+     * Closes the window.
+     */
+    public void close() {
+
+        frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+
+    }
 
     /**
      * Called when the game config is changed.

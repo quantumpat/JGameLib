@@ -2,6 +2,8 @@ package core;
 
 import gfx.Window;
 
+import java.awt.event.WindowEvent;
+
 public class Game {
 
     /*
@@ -67,6 +69,10 @@ public class Game {
      * Terminates the game.
      */
     public synchronized void stop() {
+
+        if (window != null) {
+            window.close();
+        }
 
     }
 
