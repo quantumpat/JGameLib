@@ -4,8 +4,11 @@ import core.GameConfig;
 public class Main {
     public static void main(String[] args) {
 
-        GameConfig config = new GameConfig("Demo Game", "Patrick Carroll", "Adventure", "1.0.0");
-        Game demoGame = new Game(config);
+        Game demoGame = new Game("Demo Game");
+        demoGame.getConfig().setAuthor("Patrick Carroll");
+        demoGame.getConfig().setGenre("Adventure");
+        demoGame.getConfig().setVersion("1.0.0");
+
         demoGame.start();
 
     }

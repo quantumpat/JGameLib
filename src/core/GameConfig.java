@@ -6,7 +6,9 @@ public class GameConfig {
      * Variable(s)
      */
 
+    private Game game;
     private String name, genre, author, version;
+    private int width = 800, height = 600;
 
 
     /*
@@ -16,56 +18,13 @@ public class GameConfig {
     /**
      * Used to configure and store information regarding the game.
      *
-     * @param name - The name of the game.
+     * @param game The game object.
      */
-    public GameConfig(String name) {
+    public GameConfig(Game game) {
 
-        this.name = name;
+        this.game = game;
 
-    }
-
-    /**
-     * Used to configure and store information regarding the game.
-     *
-     * @param name The name of the game.
-     * @param author The author of the game.
-     */
-    public GameConfig(String name, String author) {
-
-        this.name = name;
-        this.author = author;
-
-    }
-
-    /**
-     * Used to configure and store information regarding the game.
-     *
-     * @param name The name of the game.
-     * @param author The author of the game.
-     * @param genre The genre of the game.
-     */
-    public GameConfig(String name, String author, String genre) {
-
-        this.name = name;
-        this.author = author;
-        this.genre = genre;
-
-    }
-
-    /**
-     * Used to configure and store information regarding the game.
-     *
-     * @param name The name of the game.
-     * @param author The author of the game.
-     * @param genre The genre of the game.
-     * @param version The version of the game.
-     */
-    public GameConfig(String name, String author, String genre, String version) {
-
-        this.name = name;
-        this.author = author;
-        this.genre = genre;
-        this.version = version;
+        name = game.getName();
 
     }
 
@@ -88,6 +47,7 @@ public class GameConfig {
      */
     public void setName(String name) {
         this.name = name;
+        game.configUpdated();
     }
 
     /**
@@ -103,6 +63,7 @@ public class GameConfig {
      */
     public void setGenre(String genre) {
         this.genre = genre;
+        game.configUpdated();
     }
 
     /**
@@ -119,6 +80,7 @@ public class GameConfig {
      */
     public void setAuthor(String author) {
         this.author = author;
+        game.configUpdated();
     }
 
     /**
@@ -135,6 +97,41 @@ public class GameConfig {
      */
     public void setVersion(String version) {
         this.version = version;
+        game.configUpdated();
+    }
+
+    /**
+     * Returns the width of the game window (in pixels).
+     * @return The width of the game window (in pixels).
+     */
+    public int getWidth() {
+        return width;
+    }
+
+    /**
+     * Sets the width of the game window.
+     * @param width The width of the game window to be set (in pixels).
+     */
+    public void setWidth(int width) {
+        this.width = width;
+        game.configUpdated();
+    }
+
+    /**
+     * Returns the height of the game window (in pixels).
+     * @return The height of the game window (in pixels).
+     */
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * Sets the height of the game window (in pixels).
+     * @param height The height of the game window to be set (in pixels).
+     */
+    public void setHeight(int height) {
+        this.height = height;
+        game.configUpdated();
     }
 
 }

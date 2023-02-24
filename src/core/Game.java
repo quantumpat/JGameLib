@@ -5,6 +5,8 @@ public class Game {
     /*
      * Variable(s)
      */
+
+    private String name = "";
     private GameConfig config;
 
 
@@ -19,7 +21,8 @@ public class Game {
      */
     public Game(String name) {
 
-        config = new GameConfig(name);
+        this.name = name;
+        config = new GameConfig(this);
 
     }
 
@@ -38,6 +41,10 @@ public class Game {
     /*
      * Method(s)
      */
+
+    protected void configUpdated() {
+
+    }
 
     /**
      * Starts up the game.
@@ -94,6 +101,15 @@ public class Game {
      */
 
     /**
+     * Returns the name of the game.
+     * @return The name of the game.
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Returns the config object.
      * @return The config object.
      */
     public GameConfig getConfig() {
