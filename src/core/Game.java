@@ -1,6 +1,7 @@
 package core;
 
 import gfx.Window;
+import time.GameLoop;
 
 import java.awt.event.WindowEvent;
 
@@ -13,6 +14,7 @@ public class Game {
     private String name = "";
     private GameConfig config;
     private Window window;
+    private GameLoop gameLoop;
 
 
     /*
@@ -47,14 +49,23 @@ public class Game {
 
     }
 
+    /**
+     * Updates the game.
+     */
     public void update() {
 
     }
 
+    /**
+     * Renders the game.
+     */
     public void render() {
 
     }
 
+    /**
+     * Debugs the game.
+     */
     public void debug() {
 
     }
@@ -66,14 +77,33 @@ public class Game {
 
         printInfo();
 
-        window = new Window(this);
+        if (window == null)
+            window = new Window(this);
+
+        if (gameLoop == null) {
+            gameLoop = new GameLoop(this);
+            gameLoop.start();
+        }
 
     }
 
     /**
      * Pauses the game.
      */
-    public synchronized void pause() {
+    public void pause() {
+
+        if (gameLoop != null)
+            gameLoop.setPaused(true);
+
+    }
+
+    /**
+     * Unpauses the game.
+     */
+    public void unpause() {
+
+        if (gameLoop != null)
+            gameLoop.setPaused(false);
 
     }
 
@@ -81,6 +111,9 @@ public class Game {
      * Terminates the game.
      */
     public synchronized void stop() {
+
+        if (gameLoop != null)
+            gameLoop.stop();
 
         if (window != null) {
             window.close();
@@ -143,6 +176,14 @@ public class Game {
      */
     public Window getWindow() {
         return window;
+    }
+
+    /**
+     * Returns the game's loop object.
+     * @return The game's loop object.
+     */
+    public GameLoop getGameLoop() {
+        return gameLoop;
     }
 
 }

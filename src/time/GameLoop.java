@@ -10,7 +10,8 @@ public class GameLoop implements Runnable {
 
     private Game game;
     private Thread thread;
-    private boolean running;
+    private boolean running = false;
+    private boolean paused = false;
 
 
     /*
@@ -114,7 +115,8 @@ public class GameLoop implements Runnable {
      */
     public void update() {
 
-        game.update();
+        if (!paused)
+            game.update();
 
     }
 
@@ -123,7 +125,8 @@ public class GameLoop implements Runnable {
      */
     public void render() {
 
-        game.render();
+        if (!paused)
+            game.render();
 
     }
 
@@ -133,10 +136,12 @@ public class GameLoop implements Runnable {
      */
     public void debug(long fps) {
 
-        if (game.getConfig().isDebuggingFPS())
-            System.out.println("FPS: " + fps);
+        if (!paused) {
+            if (game.getConfig().isDebuggingFPS())
+                System.out.println("FPS: " + fps);
 
-        game.debug();
+            game.debug();
+        }
 
     }
 
@@ -172,6 +177,22 @@ public class GameLoop implements Runnable {
         else
             stop();
 
+    }
+
+    /**
+     * Returns whether the game loop is paused or not.
+     * @return Whether the game loop is paused or not.
+     */
+    public boolean isPaused() {
+        return paused;
+    }
+
+    /**
+     * Sets whether the game loop is paused or not.
+     * @param paused Whether the game loop is paused or not.
+     */
+    public void setPaused(boolean paused) {
+        this.paused = paused;
     }
 
 }
